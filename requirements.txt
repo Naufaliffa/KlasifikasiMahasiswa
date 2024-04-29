@@ -4,3 +4,4 @@ imbalanced-learn
 scikit-learn
 streamlit
 pandas-datareader
+openpyxl
