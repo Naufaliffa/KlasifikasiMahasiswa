@@ -11,6 +11,8 @@ import pandas as pd
 import numpy as np
 import pickle
 import time
+import sklearn
+
 
 st.set_page_config(
   page_title = "Klasifikasi Kelulusan Mahasiswa",
