@@ -130,7 +130,17 @@ with tab1:
         
         
                 
-with tab2:       
+with tab2:
+    st.header("Predict multiple data:")
+    
+    excel_path = "sample_data_test.xlsx"
+    
+    if st.button("Download Existing Dataset (Excel)"):
+        with open(excel_path, "rb") as f:
+            excel_data = f.read()
+            b64 = base64.b64encode(excel_data).decode()
+            href = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="{excel_path.split("/")[-1]}">Download Excel File</a>'
+            st.markdown(href, unsafe_allow_html=True)  
     
     st.header('Upload your Excel file')
     upload_file = st.file_uploader('', )
