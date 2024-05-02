@@ -110,7 +110,7 @@ with tab1:
             bar.empty()
         
         # Load save model
-        load_model = pickle.load(open('rf_model_smote.pkl', 'rb'))
+        load_model = pickle.load(open('rf_model.pkl', 'rb'))
         
         # Terapkan Random Forest
         prediction = load_model.predict(df)
