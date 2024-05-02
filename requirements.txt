@@ -1,7 +1,7 @@
 pandas
 numpy
 imbalanced-learn
-scikit-learn
+scikit-learn = 1.2.1
 streamlit
 pandas-datareader
 openpyxl
