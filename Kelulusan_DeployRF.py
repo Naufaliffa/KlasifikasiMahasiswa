@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import time
+import base64
 
 
 st.set_page_config(
