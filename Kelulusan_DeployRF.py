@@ -64,11 +64,6 @@ def input_user():
     max_value=4.00)
     st.sidebar.write(":orange[Min] value: :orange[0], :red[Max] value: :red[4]")
     st.sidebar.write("")
-
-    IPS5 = st.sidebar.number_input('**IPS 5**', min_value=0.00,
-    max_value=4.00)
-    st.sidebar.write(":orange[Min] value: :orange[0], :red[Max] value: :red[4]")
-    st.sidebar.write("")
         
     data = {'JenisKelamin' : JenisKelamin,
     'StatusMahasiswa' : StatusMahasiswa,
@@ -77,8 +72,7 @@ def input_user():
     'IPS1' : IPS1,
     'IPS2' : IPS2,
     'IPS3' : IPS3,
-    'IPS4' : IPS4,
-    'IPS5' : IPS5}
+    'IPS4' : IPS4}
     fitur = pd.DataFrame(data, index=[0])
     return fitur
 inputan = input_user()
