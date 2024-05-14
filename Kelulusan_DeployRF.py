@@ -29,7 +29,7 @@ def input_user():
     st.sidebar.header("User Input Sidebar")
     
     JenisKelamin = st.sidebar.selectbox('**JenisKelamin**', ('0', '1'))
-    st.sidebar.write('Perempuan = 0, Laki=laki = 1')
+    st.sidebar.write('Perempuan = 0, Laki-laki = 1')
     st.sidebar.write("")
 
     StatusMahasiswa = st.sidebar.selectbox('**StatusMahasiswa**', ('0', '1'))
@@ -183,7 +183,7 @@ with tab3:
     st.write("Halaman ini memberikan informasi dasar tentang aplikasi yang dibuat.")
     
     st.header("Informasi Aplikasi")
-    st.write("Tujuan aplikasi ini yaitu untuk dapat memprediksi apakah mahasiswa akan lulus teat waktu atau tidak")
+    st.write("Tujuan aplikasi ini yaitu untuk dapat memprediksi apakah mahasiswa akan lulus tepat waktu atau tidak")
     st.write("Aplikasi ini dikembangkan dengan menggunakan Streamlit, sebuah framework Python untuk membuat aplikasi web interaktif.")
     st.write("Dataset yang dipakai pada aplikasi ini berasal dari: [Kaggle](https://www.kaggle.com/datasets/hafizhathallah/kelulusan-mahasiswa?rvi=1)")
     st.write("Untuk fitur pada aplikasi saat ini yaitu, memprediksi kelulusan mahasiswa dengan data tunggal serta memprediksi kelulusan mahasiswa dengan data banyak sekaligus")
