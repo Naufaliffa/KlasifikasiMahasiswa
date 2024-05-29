@@ -163,7 +163,7 @@ with tab2:
             # Kita juga bisa mengubah teks status untuk memberi tahu pengguna bahwa proses telah selesai
             status_text.text(" ")
             # Load save model
-            load_model = pickle.load(open('rf_model_smote.pkl', 'rb'))
+            load_model = pickle.load(open('rf_model_smote_skripsi.pkl', 'rb'))
             # Terapkan Random Forest
             prediction = load_model.predict(df)
             
