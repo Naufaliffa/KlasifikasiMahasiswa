@@ -115,7 +115,7 @@ with tab1:
         
         # Terapkan Random Forest
         prediction = load_model.predict(df)
-        StatusKelulusan = np.array(['Terlambat', 'Tepat'])
+        StatusKelulusan = np.array(['Terlambat', 'Tepat']) #ganti bagian ini
             
         #st.subheader('Hasil Prediksi (Klasifikasi) Waktu Kelulusan Mahasiswa')
         
@@ -125,6 +125,8 @@ with tab1:
           result = ":red[**Terlambat**]"
         elif prediction == 1:
           result = ":green[**Tepat Waktu**]"
+        else :
+          result = ":red[**Terlambat**]"
 
         st.write("")
         st.subheader("Prediksi Mahasiswa:")
@@ -133,6 +135,7 @@ with tab1:
         
                 
 with tab2:       
+    
     st.header("Predict multiple data:")
     
     excel_path = "sample_data_test_update.xlsx"
@@ -163,7 +166,7 @@ with tab2:
             # Kita juga bisa mengubah teks status untuk memberi tahu pengguna bahwa proses telah selesai
             status_text.text(" ")
             # Load save model
-            load_model = pickle.load(open(knn_model_skripsi.pkl', 'rb'))
+            load_model = pickle.load(open('knn_model_skripsi.pkl', 'rb'))
             # Terapkan Random Forest
             prediction = load_model.predict(df)
             
